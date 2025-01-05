@@ -23,7 +23,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background: linear-gradient(90deg, #617E96, #006D77);
+    background: linear-gradient(90deg, #617E96, #074f56);
     padding: 20px 0;
     text-align: center;
     position: sticky;
@@ -78,7 +78,7 @@ nav a:hover::after {
 
 /* Header */
 header {
-    background: linear-gradient(35deg, #03474d, #275e76, #5a918d);
+    background: linear-gradient(135deg, #03474d, #275e76, #5a918d);
     text-align: center;
     padding: 80px 20px;
     color: #FFFFFF;
@@ -252,49 +252,58 @@ a:hover {
         font-size: 1.2rem;
     }
 }
-</style>
+
+    </style>
 <body>
-<header>
-    <h1><b><strong>       2. Challenges in correlating with the real world applications
-    </strong></b></h1>
-</header>
-<main>
-<div class="content-box">
-    <h2>1. Time Complexity Analysis</h2>
-    <h3>- Understanding why the theoretically calculated complexity is different from the complexity calculated practically.</h3>
-    <h3>- Understanding how the performance varies in theoretically calculated complexity and practically calculated complexity.</h3>
+    <nav>
+        <a href="COURSE_PROJECT.html"></a>
+        <a href="CP_1.html">WORKING</a>
+        <a href="CP_2.html">ALGORITHM</a>
+        <!--<a href="daa_lab2_1.html">REFLECTIONS</a>
+        <a href="daa_2_3.html">CHALLENGES IN LEARNING</a>
+        <a href="daa_lab_2_4.html">CHALLENGES IN CORELATING CONCEPTS</a>
+        <a href="daa_lab_2_5.html">MOST EFFICIENT APPROACH</a><!-->
+
+        
+</nav>
+    <header>
+        <h1>Smart Indoor Parking System</h1>
+    </header>
+
+    <main>
+        <section>
+           <h3> FUNCTIONALITY:</h3>
+           <p> The module discusses the priority  to find and provide the nearest parking lot to the entrance for the user.
+            This ensures that the driver doesn’t waste their time searching the vacant parking and he also can obtain the nearest 
+            parking to the entrance with the help of the system. <p>
+            <h3>ALGORITHM USED:</h3>  
+            <P>Dijkstra Algorithm</P>        
+        </section>
+
+        <section>
+            <h2> The  procedure</h2>
+ <div>
+   <ul>
+     <li>As the car enters the parking area a unique number is assigned to the car.</li>
+     <li>An array named parkingLots stores the parking slot numbers which are not yet occupied.</li>
+     <li>Using Dijkstra Algorithm we find the nearest parking slot available to that particular car. </li>
+     <li> The car is assigned with a parking slot such that it is near to parking enterance as well inorder to avoid the conjestion. </li>
+     <li>Once a parking slot is allocated to a car it is marked as seen/occupied until the car in that slot exists the parking area.</li>
+     <li>design principles applicable : Edge Relaxation.</li>
+     <li>design technique: greedy algorithm.</li>
+     <li>Time complexity: Since priority queue is used,the time complexity is O(V+E)logV)</li>
+      <li> data structure used: Priority Queue.</li>
+
+         </ul>
   </div>
-  
-  <div class="content-box">
-    <h2>2. Binary Search Tree (BST)</h2>
-    <h3>- Understanding how it relates to indexing for quick data retrieval.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>3. Depth-First Search (DFS) and Breadth-First Search (BFS)</h2>
-    <h3>- Understanding when to use DFS over BFS and vice-versa in complex real-world applicative questions.</h3>
-    <h3>- Understanding why DFS is used in solving puzzles like maze problems and why BFS is used to calculate the shortest path.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>4. Heap</h2>
-    <h3>- Using priority queues for implementation offers challenges.</h3>
-    <h3>- Difficulty in visualizing dynamic heap operations (insertion, deletion).</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>5. Sorting</h2>
-    <h3>- Understanding when to use merge sort over quick sort and when to use quick sort over merge sort and the reason behind usage of it in each case.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>6. Pattern Searching</h2>
-    <h3>- Understanding how it relates to search engines and network security.</h3>
-    <h3>- Implementing these methods over large datasets offers a challenge sometimes.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>7. Graph Algorithms</h2>
-    <h3>- Deciding which algorithm to use for a particular problem can be confusing sometimes.</h3>
-  </div>
-</main>
+
+
+        </section>
+    </main>
+<body>
+    <footer>
+        <p>references</p>
+    </footer>
+
+</body>
+</html>

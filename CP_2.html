@@ -23,7 +23,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background: linear-gradient(90deg, #617E96, #006D77);
+    background: linear-gradient(90deg, #617E96, #074f56);
     padding: 20px 0;
     text-align: center;
     position: sticky;
@@ -78,7 +78,7 @@ nav a:hover::after {
 
 /* Header */
 header {
-    background: linear-gradient(35deg, #03474d, #275e76, #5a918d);
+    background: linear-gradient(135deg, #03474d, #275e76, #5a918d);
     text-align: center;
     padding: 80px 20px;
     color: #FFFFFF;
@@ -243,7 +243,6 @@ a:hover {
     header {
         font-size: 2.5rem;
     }
-
     header h1 {
         font-size: 3rem;
     }
@@ -252,49 +251,43 @@ a:hover {
         font-size: 1.2rem;
     }
 }
-</style>
-<body>
-<header>
-    <h1><b><strong>       2. Challenges in correlating with the real world applications
-    </strong></b></h1>
-</header>
-<main>
-<div class="content-box">
-    <h2>1. Time Complexity Analysis</h2>
-    <h3>- Understanding why the theoretically calculated complexity is different from the complexity calculated practically.</h3>
-    <h3>- Understanding how the performance varies in theoretically calculated complexity and practically calculated complexity.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>2. Binary Search Tree (BST)</h2>
-    <h3>- Understanding how it relates to indexing for quick data retrieval.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>3. Depth-First Search (DFS) and Breadth-First Search (BFS)</h2>
-    <h3>- Understanding when to use DFS over BFS and vice-versa in complex real-world applicative questions.</h3>
-    <h3>- Understanding why DFS is used in solving puzzles like maze problems and why BFS is used to calculate the shortest path.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>4. Heap</h2>
-    <h3>- Using priority queues for implementation offers challenges.</h3>
-    <h3>- Difficulty in visualizing dynamic heap operations (insertion, deletion).</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>5. Sorting</h2>
-    <h3>- Understanding when to use merge sort over quick sort and when to use quick sort over merge sort and the reason behind usage of it in each case.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>6. Pattern Searching</h2>
-    <h3>- Understanding how it relates to search engines and network security.</h3>
-    <h3>- Implementing these methods over large datasets offers a challenge sometimes.</h3>
-  </div>
-  
-  <div class="content-box">
-    <h2>7. Graph Algorithms</h2>
-    <h3>- Deciding which algorithm to use for a particular problem can be confusing sometimes.</h3>
-  </div>
-</main>
+.image-container { display: flex; justify-content: space-between; } .image-container img { max-width: 45%; height: auto; }
+.center-img { display: block; margin-left: auto; margin-right: auto; }
+.left-img { display: block; margin-left: 5rem; margin-right: auto; }
+.right-img { display: block; margin-left: auto; margin-right: 5rem; }
+
+    </style>
+        <main>
+            <headrer><h1>ALGORITHM:</h1></headrer>
+            
+    </main>
+        <body>
+            <div class="content-box">
+            <h2>Graph Representation:</h2>
+            <h3>The parking area is represented as a graph where each parking lot and the entrance are nodes.
+            </h3>
+            <h3>Paths connecting these nodes are represented as edges with weights corresponding to the distance.
+            </h3>
+            <h2>Algorithm:</h2>
+            <h3>Start with the entrance node, setting its distance to zero and all other nodes' distances to infinity.
+            </h3>
+            <h3>Use a priority queue to manage and process nodes based on their current shortest distance.
+            </h3>
+            <h3>Extract the node with the smallest distance from the priority queue.
+            </h3>
+            <h3>Update the distances of its neighboring nodes if a shorter path is found through the current node.
+            </h3>
+            <h3>Repeat this process until the nearest parking lot node's shortest distance is determined.
+            </h3>
+            <h3>Once the nearest parking lot is identified, trace back the path using the recorded distances and predecessor nodes.
+            </h3>
+            </div>
+            <div class="content-box">
+                <div class="image-container"> <img src="parking.png" alt="Parking" class="left-img"> <img src="graph1.png" alt="Graph"class="right-img"> </div>
+
+        </div>
+        <div class="content-box"><button type="button" onclick="location.href='SMART_INDOOR_PARKING_DIJKSTRA.cpp'" class="center-img"style="width: 200px; height: 50px;padding: 10px 10px 10px 20px;">Click Me For Code!</button>
+        
+            <div style="text-align: center;"><h2>OUTPUT:</h2></div>    
+            <div class="image-container"> <img src="op.png" alt="" class="center-img"></div>
+    </body>
